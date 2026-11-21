@@ -35,7 +35,7 @@ export default function Fontes() {
     [q, status],
   );
 
-  const conectadas = fontes.filter((fonte) => fonte.status === 'conectado').length;
+  const conectadas = FONTES_RESUMO.conectadas;
 
   return (
     <div>

@@ -8,7 +8,7 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ALERTAS_RESUMO, FINANCAS_RESUMO, OBRAS_RESUMO, contratos, obras } from '@/data';
-import { formatBRL, formatBRLCompact, formatNumber } from '@/lib/format';
+import { formatBRL, formatBRLCompact } from '@/lib/format';
 import { Badge, Callout, Card, DemoNotice, PageHeader, SectionCard } from '@/components/ui/primitives';
 import { IconArrowLeft, IconSparkles } from '@/components/ui/icons';
 

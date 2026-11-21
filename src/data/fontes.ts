@@ -120,7 +120,8 @@ export const fontes: Fonte[] = [
 
 export const FONTES_RESUMO = {
   total: fontes.length,
-  conectadas: fontes.filter((f) => f.status === 'conectado').length,
+  // Nenhuma integração externa está ativa nesta versão: o número é sempre 0.
+  conectadas: 0,
   planejadas: fontes.filter((f) => f.status === 'planejado').length,
   emAvaliacao: fontes.filter((f) => f.status === 'em avaliação').length,
 };

@@ -22,12 +22,12 @@ export default function NaoEncontrado() {
       />
 
       <div className="grid gap-2.5 sm:grid-cols-2 xl:grid-cols-3">
-        <ActionCard to="/" title="Visão Geral" description="Painel com os principais indicadores da plataforma." icon={<IconHome size={18} />} LinkComponent={Link} />
-        <ActionCard to="/contratos" title="Contratos" description="Lista filtrável de contratos administrativos fictícios." icon={<IconFile size={18} />} LinkComponent={Link} />
-        <ActionCard to="/obras" title="Obras" description="Execução física e financeira das obras mapeadas." icon={<IconHardHat size={18} />} LinkComponent={Link} />
-        <ActionCard to="/mapa-vivo" title="OBSERVA MAPA VIVO" description="Pontos de saúde, educação, obras e serviços." icon={<IconMap size={18} />} LinkComponent={Link} />
-        <ActionCard to="/alertas" title="Alertas" description="Sinais objetivos que merecem conferência documental." icon={<IconBell size={18} />} LinkComponent={Link} />
-        <ActionCard to="/busca" title="Busca" description="Pesquise em todas as seções da plataforma." icon={<IconSearch size={18} />} LinkComponent={Link} />
+        <ActionCard to="/" title="Visão Geral" description="Painel com os principais indicadores da plataforma." icon={IconHome} LinkComponent={Link} />
+        <ActionCard to="/contratos" title="Contratos" description="Lista filtrável de contratos administrativos fictícios." icon={IconFile} LinkComponent={Link} />
+        <ActionCard to="/obras" title="Obras" description="Execução física e financeira das obras mapeadas." icon={IconHardHat} LinkComponent={Link} />
+        <ActionCard to="/mapa-vivo" title="OBSERVA MAPA VIVO" description="Pontos de saúde, educação, obras e serviços." icon={IconMap} LinkComponent={Link} />
+        <ActionCard to="/alertas" title="Alertas" description="Sinais objetivos que merecem conferência documental." icon={IconBell} LinkComponent={Link} />
+        <ActionCard to="/busca" title="Busca" description="Pesquise em todas as seções da plataforma." icon={IconSearch} LinkComponent={Link} />
       </div>
     </div>
   );

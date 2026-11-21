@@ -102,7 +102,7 @@ export default function Educacao() {
                   <div className="flex items-start justify-between gap-2">
                     <Badge tone="brand">{escola.etapas}</Badge>
                     <span className="text-[10px] font-medium uppercase tracking-wide text-slate-400">
-                      IDEB fictício {escola.idebFicticio.toFixed(1)}
+                      IDEB fictício {escola.idebFicticio === null ? '—' : escola.idebFicticio.toFixed(1)}
                     </span>
                   </div>
                   <h3 className="mt-2 text-[13px] font-semibold leading-snug text-slate-900">{escola.nome}</h3>

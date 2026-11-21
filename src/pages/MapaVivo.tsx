@@ -3,7 +3,7 @@ import { useMemo, useState } from 'react';
 import { CAMADAS_MAPA, MAPA_RESUMO, mapaPontos } from '@/data';
 import type { MapaPonto } from '@/data';
 import { matchText } from '@/lib/filters';
-import { ChipFilter, ResultsCount, SearchInput, useFilterParams } from '@/components/filters/Filters';
+import { ChipFilter, FilterPanel, ResultsCount, SearchInput, useFilterParams } from '@/components/filters/Filters';
 import { Badge, Callout, DemoNotice, KeyValueGrid, PageHeader, SectionCard, StatCard, StatusBadge } from '@/components/ui/primitives';
 import { IconLayers, IconMap, IconPin } from '@/components/ui/icons';
 

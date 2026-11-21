@@ -5,7 +5,6 @@ import type { Contrato } from '@/data';
 import { faixaValorOptions, matchFaixa, matchSelect, matchText, uniqueValues, uniqueYears } from '@/lib/filters';
 import { downloadFile, formatBRL, formatBRLCompact, formatDate, formatNumber, formatPercent, toCSV } from '@/lib/format';
 import {
-  ChipFilter,
   FilterPanel,
   ResultsCount,
   SearchInput,

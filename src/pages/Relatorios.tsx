@@ -82,7 +82,7 @@ const RELATORIOS: Relatorio[] = [
     descricao: 'Bairro, etapa, matrículas, turmas e IDEB fictício.',
     registros: escolas.length,
     colunas: ['Escola', 'Bairro', 'Etapa', 'Matrículas', 'Turmas', 'IDEB (fictício)'],
-    linhas: () => escolas.map((e) => [e.nome, e.bairro, e.etapas, e.matriculas, e.turmas, e.idebFicticio]),
+    linhas: () => escolas.map((e) => [e.nome, e.bairro, e.etapas, e.matriculas, e.turmas, e.idebFicticio ?? '—']),
   },
   {
     id: 'servicos',
