@@ -1,0 +1,14 @@
+{
+  "name": "observa",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "OBSERVA — plataforma de transparência e fiscalização pública de Casimiro de Abreu/RJ (demonstração com dados fictícios)",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5173",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "start": "node server.js",
+    "typecheck": "tsc --noEmit"
+  }
+}
