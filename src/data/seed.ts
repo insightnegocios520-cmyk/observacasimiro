@@ -76,3 +76,16 @@ export const ANOS = [2024, 2025, 2026] as const;
 export function anoDe(iso: string): number {
   return Number(iso.slice(0, 4));
 }
+
+/** Soma meses a uma data ISO (YYYY-MM-DD) sem depender de fuso local. */
+export function addMonths(iso: string, months: number): string {
+  const d = new Date(`${iso}T00:00:00Z`);
+  d.setUTCMonth(d.getUTCMonth() + months);
+  return d.toISOString().slice(0, 10);
+}
+
+/** CNPJ com raiz inválida (00) — sinaliza claramente que o documento é fictício. */
+export function cnpjFicticio(rng: Rng): string {
+  const bloco = () => String(rng.int(100, 999));
+  return `00.${bloco()}.${bloco()}/0001-${String(rng.int(10, 99))}`;
+}
