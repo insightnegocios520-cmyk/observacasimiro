@@ -31,10 +31,13 @@ export default function App() {
         <Route path="saude" element={<Saude />} />
         <Route path="educacao" element={<Educacao />} />
         <Route path="servicos" element={<Servicos />} />
+        <Route path="servicos-municipais" element={<Servicos />} />
         <Route path="administracao" element={<Administracao />} />
         <Route path="publicacoes" element={<Publicacoes />} />
         <Route path="mapa" element={<MapaVivo />} />
+        <Route path="mapa-vivo" element={<MapaVivo />} />
         <Route path="ia" element={<ObservaAI />} />
+        <Route path="observa-ai" element={<ObservaAI />} />
         <Route path="alertas" element={<Alertas />} />
         <Route path="relatorios" element={<Relatorios />} />
         <Route path="fontes" element={<Fontes />} />

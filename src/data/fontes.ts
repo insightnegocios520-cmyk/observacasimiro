@@ -120,7 +120,7 @@ export const fontes: Fonte[] = [
 
 export const FONTES_RESUMO = {
   total: fontes.length,
-  conectadas: fontes.filter((f) => f.status === 'não conectado').length,
+  conectadas: fontes.filter((f) => f.status === 'conectado').length,
   planejadas: fontes.filter((f) => f.status === 'planejado').length,
   emAvaliacao: fontes.filter((f) => f.status === 'em avaliação').length,
 };
